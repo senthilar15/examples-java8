@@ -4,7 +4,7 @@ public class Color {
 	
 	public  Color brighter(){
 		
-		System.out.println("Brighter");
+		System.out.println("Brighter clled");
 		return new Color();
 	}
 	
