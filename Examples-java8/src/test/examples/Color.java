@@ -3,7 +3,7 @@ package test.examples;
 public class Color {
 	
 	public  Color brighter(){
-		System.out.println("Brighter clled");
+		System.out.println("Brighter Called again changed");
 		return new Color();
 	}
 	
