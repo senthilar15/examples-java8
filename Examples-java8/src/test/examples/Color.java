@@ -3,7 +3,7 @@ package test.examples;
 public class Color {
 	
 	public  Color brighter(){
-		System.out.println("Brighter Called again changed");
+		System.out.println("Brighter");
 		return new Color();
 	}
 	
@@ -32,6 +32,9 @@ public class Color {
 		return new Color();
 	}
   
-
+    @Override
+	public String toString(){
+    	return "color";
+    }
 
 }
