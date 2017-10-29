@@ -21,13 +21,13 @@ public class StreamExample {
 			Path path = Paths.get(StreamExample.class.getResource("/test/examples/stream-provider").toURI());
 			Files.readAllLines(path).stream()
 					                  .flatMap(StreamExample::splitWords)
-					                  .peek(System.out::println)
+					                  //.peek(System.out::println)
 					                  .forEach(i -> {});  
 			 
 			Set<String> set = Files.readAllLines(path).stream()
                                      .map(StreamExample::splitWords)
                                      .flatMap(i ->i)
-                                     .peek(System.out::println)
+                                     //.peek(System.out::println)
                                      .collect(Collectors.toSet()) ;
 			
 				Set<String> set2 = new HashSet<>();
