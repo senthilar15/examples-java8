@@ -38,7 +38,7 @@ public class StreamExample {
 				            .map(Math::ceil)
 				            .map(Math::round)
 				            .limit(10)
-				            .peek(System.out::println)
+				           // .peek(System.out::println)
 				            .forEach(i -> {});  ;
 				            
 				            
@@ -50,7 +50,7 @@ public class StreamExample {
 				               return 0.0d;})
 				            .filter(e ->( (double)e > 0))
 				            .limit(10)
-				            .peek(System.out::println)
+				            //.peek(System.out::println)
 				            .forEach(i -> {});  
 			
 			
