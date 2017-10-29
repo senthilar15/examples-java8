@@ -34,7 +34,7 @@ public class Color {
   
     @Override
 	public String toString(){
-    	return "Color + Black Color Red+Blue";
+    	return "Color Black";
     }
 
 }
