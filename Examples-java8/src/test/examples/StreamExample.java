@@ -21,13 +21,13 @@ public class StreamExample {
 			Path path = Paths.get(StreamExample.class.getResource("/test/examples/stream-provider").toURI());
 			Files.readAllLines(path).stream()
 					                  .flatMap(StreamExample::splitWords)
-					                 // .peek(System.out::println)
+					                  .peek(System.out::println)
 					                  .forEach(i -> {});  
 			 
 			Set<String> set = Files.readAllLines(path).stream()
                                      .map(StreamExample::splitWords)
                                      .flatMap(i ->i)
-                                     //.peek(System.out::println)
+                                     .peek(System.out::println)
                                      .collect(Collectors.toSet()) ;
 			
 				Set<String> set2 = new HashSet<>();
@@ -72,7 +72,7 @@ public class StreamExample {
 		
 			Optional<Double> sqroot = inverse(2).flatMap(StreamExample::sqroot);
 			
-		 	//set.stream().mapToInt(String::length).reduce(Integer::sum).ifPresent(System.out::println);
+		 	set.stream().mapToInt(String::length).reduce(Integer::sum).ifPresent(System.out::println);
 		 	
 		 	set.stream().map(String::length).reduce(Integer::sum).ifPresent(System.out::println);
 		 	
