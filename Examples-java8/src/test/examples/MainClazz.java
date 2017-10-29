@@ -190,7 +190,7 @@ public class MainClazz {
 
 	private static Stream<String> anthorStream(String e) {
 		// TODO Auto-generated method stub
-		return Stream.of("a","b","c","d");
+		return Stream.of("a","b","c","d","e","g");
 	}
 
 
